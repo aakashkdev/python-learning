@@ -1,6 +1,9 @@
-class Account:
-  def _init_(self, balance):
-    self._balance = balance
+class BankAccount:
+  def __init__(self, balance):
+    self.__balance = balance 
 
   def deposit(self, amount):
-    self._balance +=amount
+    self.__amount += amount
+
+  def get_balance(self):
+    return self.__balance 
